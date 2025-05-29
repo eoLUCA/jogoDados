@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Dados</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+</head>
+<script>
+    let nome1 = prompt('Qual o nome do jogador 1?')
+    let nome2 = prompt('Qual o nome do jogador 2?')
+</script>
+<body>
+    <main class="container">
+        <h1>Jogo dos Dados</h1>
+
+        <h2></h2>
+
+        <h3>Placar</h3>
+
+        <p class="placar"></p>
+    </main>
+    <section>
+        <div class="container_2">
+            <div class="dice">
+                <h2 class="max">Jogador 1</h2>
+                <img class="images" src="" alt="dados">
+            </div>
+
+            <div class="dice">
+                <button class="botaoNovaRodada">Mais um?</button>
+            </div>
+
+            <div class="dice">
+                <h2 class="max">Jogador 2</h2>
+                <img class="images" src="" alt="dados">
+            </div>
+        </div>
+    </section>
+    <footer class="container">
+        
+    </footer>
+    <script>
+        document.querySelectorAll('h2')[1].innerHTML = nome1
+        document.querySelectorAll('h2')[2].innerHTML = nome2
+    </script>
+    <script src="./app.js"></script>
+</body>
+</html>

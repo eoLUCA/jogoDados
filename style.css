@@ -1,0 +1,130 @@
+* {
+    background-color: green;
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.container_2 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.dice {
+    display: inline-block;
+    text-align: center;
+    margin:10px;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 30px;
+    text-shadow: 5px 0 #2329;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 30px;
+}
+
+p {
+    font-size: 30px;
+    margin: 30px;
+}
+
+.images {
+    width: 150px;
+    height: 150px;
+}
+
+li {
+    font-size: 20px;
+}
+
+.meio {
+    display:inline-block;
+    text-align: center;
+}
+
+.botao {
+    background-color: #fff;
+    color:black;
+    height: 100px;
+    width: 150px;
+    border-radius: 200px;
+    margin: 20px;
+    font-size: 25px;
+    border-style: none;
+} 
+
+.nomes {
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px
+}
+
+.botaoNovaRodada {
+    background-color: #fff;
+    color:black;
+    height: 100px;
+    width: 150px;
+    border-radius: 200px;
+    margin: 20px;
+    font-size: 25px;
+    border-style: none;
+}
+
+.placar {
+    margin-bottom: 1px;
+}
+
+@media (max-width: 800px) {
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 25px
+}
+
+.container_2 {
+    display: flex;
+    margin:auto;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.images {
+    width: 70px;
+    height: 70px;
+}
+
+.botaoNovaRodada {
+    height: 80px;
+    width: 100px;
+    border-radius: 200px;
+    font-size: 15px;
+    margin: auto;
+}
+
+.max {
+    font-size: 18px;
+}
+
+}
+
