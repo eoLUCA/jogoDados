@@ -1,6 +1,6 @@
 //DADO 1
 
-let randomNumber1 = Math.floor(Math.random() * 6) +1
+let randomNumber1 = 1
 
 let randomDice1 = 'img/dice.'+randomNumber1+'.png'
 
@@ -10,7 +10,7 @@ image1.setAttribute('src', randomDice1)
 
 // DADO 2
 
-let randomNumber2 = Math.floor(Math.random() * 6) +1
+let randomNumber2 = 1
 
 let randomDice2 = 'img/dice.'+randomNumber2+'.png'
 
