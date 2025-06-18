@@ -1,3 +1,25 @@
+//NOMES SEMPRE MAIÚSCULO
+
+let nomePrimeiraLetra1 = nome1.slice(0 , 1)
+
+let restanteNome1 = nome1.slice(1)
+
+let nomePrimeiraLetra2 = nome2.slice(0 , 1)
+
+let restanteNome2 = nome2.slice(1)
+
+let primeiraLetraMaiuscula1 = nomePrimeiraLetra1.toUpperCase();
+
+let primeiraLetraMaiuscula2 = nomePrimeiraLetra2.toUpperCase();
+
+let nomeCorrigido1 = primeiraLetraMaiuscula1 + restanteNome1
+
+let nomeCorrigido2 = primeiraLetraMaiuscula2 + restanteNome2
+
+document.querySelectorAll("h2")[1].innerHTML = nomeCorrigido1
+
+document.querySelectorAll("h2")[2].innerHTML = nomeCorrigido2
+
 //DADO 1
 
 let randomNumber1 = 1
@@ -20,9 +42,9 @@ image2.setAttribute('src', randomDice2)
 
 // PLACAR
 
-let player1 = nome1
+let player1 = nomeCorrigido1
 
-let player2 = nome2
+let player2 = nomeCorrigido2
 
 let placar1 = 0
 
@@ -40,7 +62,7 @@ if (player2win) {
     placar2++
 } 
 
-document.querySelector('p').innerHTML = nome1+' '+placar1+' X '+placar2+' '+nome2
+document.querySelector('p').innerHTML = nomeCorrigido1+' '+placar1+' X '+placar2+' '+nomeCorrigido2
 
 // GANHADOR
 
@@ -48,9 +70,9 @@ document.querySelector('p').innerHTML = nome1+' '+placar1+' X '+placar2+' '+nome
 let empate = randomNumber2 === randomNumber1
 
 if (player1win) {
-   document.querySelector('h2').innerHTML = nome1+' Ganhou!!!'
+   document.querySelector('h2').innerHTML = nomeCorrigido1+' Ganhou!!!'
 } else {
-    document.querySelector('h2').innerHTML = nome2+' Ganhou!!!'
+    document.querySelector('h2').innerHTML = nomeCorrigido2+' Ganhou!!!'
 }
 
 if (empate) {
@@ -91,12 +113,12 @@ document.getElementsByTagName('button')[0].onclick = function(){
         placar2++
     }
 
-    document.querySelector('p').innerHTML = nome1+' '+placar1+' X '+placar2+' '+nome2
+    document.querySelector('p').innerHTML = nomeCorrigido1+' '+placar1+' X '+placar2+' '+nomeCorrigido2
 
     if (player1win) {
-    document.querySelector('h2').innerHTML = nome1+' Ganhou!!!' 
+    document.querySelector('h2').innerHTML = nomeCorrigido1+' Ganhou!!!' 
     } else {
-        document.querySelector('h2').innerHTML = nome2+' Ganhou!!!' 
+        document.querySelector('h2').innerHTML = nomeCorrigido2+' Ganhou!!!' 
     }
 
     if (empate) {
