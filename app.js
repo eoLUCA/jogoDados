@@ -1,3 +1,11 @@
+const parametros = new
+    URLSearchParams(window.location.search);
+const nome1= parametros.get("jogador1")?.trim();
+const nome2= parametros.get("jogador2")?.trim();
+if (!nome1 || !nome2) {
+    alert("Informe o nome dos dois Jogadores!")
+    window.location.replace("index.html")
+
 //NOMES SEMPRE MAIÚSCULO
 
 let nomePrimeiraLetra1 = nome1.slice(0 , 1)
