@@ -94,6 +94,87 @@ li {
     margin-bottom: 1px;
 }
 
+/* Nomes dos jogadores */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 25px auto;
+}
+
+form label {
+    font-size: 22px;
+    color: white;
+    margin-top: 10px;
+}
+
+form input {
+    width: 260px;
+    max-width: 85%;
+    padding: 12px 15px;
+
+    background-color: white;
+    color: #222;
+
+    border: 2px solid white;
+    border-radius: 15px;
+
+    font-family: "Delius", serif;
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+}
+
+/* Quando o jogador seleciona o campo */
+
+form input:focus {
+    border-color: #b8ff9e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Botão começar */
+
+form button {
+    background-color: white;
+    color: black;
+
+    padding: 15px 35px;
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 50px;
+
+    font-family: "Delius", serif;
+    font-size: 22px;
+    cursor: pointer;
+
+    box-shadow: 0 6px #999;
+}
+
+form button:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
+/* Celulares */
+
+@media (max-width: 600px) {
+    form label {
+        font-size: 18px;
+    }
+
+    form input {
+        width: 220px;
+        font-size: 16px;
+    }
+
+    form button {
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 800px) {
 
 h1 {
