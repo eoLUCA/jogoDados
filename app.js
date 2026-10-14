@@ -4,8 +4,12 @@ const nome1= parametros.get("jogador1")?.trim();
 const nome2= parametros.get("jogador2")?.trim();
 if (!nome1 || !nome2) {
     alert("Informe o nome dos dois Jogadores!")
-    window.location.replace("index.html")
+    window.location.replace("index.html");
+} else {
+    iniciarJogo();
+}
 
+function iniciarJogo() {
 //NOMES SEMPRE MAIÚSCULO
 
 let nomePrimeiraLetra1 = nome1.slice(0 , 1)
@@ -24,9 +28,9 @@ let nomeCorrigido1 = primeiraLetraMaiuscula1 + restanteNome1
 
 let nomeCorrigido2 = primeiraLetraMaiuscula2 + restanteNome2
 
-document.querySelectorAll("h2")[1].innerHTML = nomeCorrigido1
+document.querySelectorAll("h2")[1].textContent = nomeCorrigido1
 
-document.querySelectorAll("h2")[2].innerHTML = nomeCorrigido2
+document.querySelectorAll("h2")[2].textContent = nomeCorrigido2
 
 //DADO 1
 
@@ -132,4 +136,5 @@ document.getElementsByTagName('button')[0].onclick = function(){
     if (empate) {
         document.querySelector('h2').innerHTML = "Empate"
     }
+}
 }
