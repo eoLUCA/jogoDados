@@ -25,7 +25,13 @@
         </div>
         <div class="meio">
             <h2>Vamos Começar?</h2>
-            <a href="gamePage.html"><button class="botaoNovaRodada">Começar!</button></a>
+            <form action="gamePage.html" method="GET">
+                <label for="jogador1">Jogador 1:</label>
+                <input type="text" id="jogador1" name="jogador1" required>
+                <label for="jogador2">Jogador 2:</label>
+                <input type="text" id="jogador2" name="jogador2" required>
+                <button type="submit">Começar</button>
+            </form>
         </div>
 
         
